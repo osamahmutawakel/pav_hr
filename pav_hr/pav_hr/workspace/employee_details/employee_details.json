@@ -1,0 +1,287 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"qfU7oxxH1s\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Your Shortcuts</span>\",\"col\":12}},{\"id\":\"fr_KHCy5sj\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Employee Scorecard\",\"col\":4}},{\"id\":\"bsUw1-Md8I\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Employee Scorecard Template\",\"col\":4}},{\"id\":\"Yo6dHBYr0g\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Cumulative Employee Scorecard Report\",\"col\":4}},{\"id\":\"TFgW5dZSAz\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Training Program\",\"col\":4}},{\"id\":\"Tnegx9uI8m\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Training Result\",\"col\":4}},{\"id\":\"YdAJc-VK6s\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Training Feedback\",\"col\":4}},{\"id\":\"xof6NXCiws\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Date wise Employee Checkin OT\",\"col\":4}},{\"id\":\"KCvnp6DMpO\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Employee Checkin Summery Report\",\"col\":4}},{\"id\":\"326b7tXOCG\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Cumulative Attendance Report\",\"col\":4}},{\"id\":\"AH5Ej4KEsp\",\"type\":\"header\",\"data\":{\"text\":\"<br>\",\"col\":12}},{\"id\":\"fdwYoGMTt3\",\"type\":\"paragraph\",\"data\":{\"text\":\"\u0627\u0644\u0645\u0648\u0627\u0631\u062f \u0627\u0644\u0628\u0634\u0631\u064a\u0629\",\"col\":12}},{\"id\":\"xCdUxMuJzK\",\"type\":\"card\",\"data\":{\"card_name\":\"\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0645\u0648\u0638\u0641\",\"col\":3}},{\"id\":\"PpDD8Z91hD\",\"type\":\"card\",\"data\":{\"card_name\":\"\u0627\u0644\u064a\u0629 \u0627\u0644\u062a\u062d\u0636\u064a\u0631\",\"col\":3}},{\"id\":\"Sq_KUSlMuj\",\"type\":\"card\",\"data\":{\"card_name\":\"\u0627\u0644\u0627\u062c\u0627\u0632\u0627\u062a\",\"col\":3}},{\"id\":\"0OQlqapaDC\",\"type\":\"card\",\"data\":{\"card_name\":\"\u0627\u0644\u0645\u0631\u062a\u0628\u0627\u062a \u0648 \u0627\u0644\u0627\u062c\u0648\u0631\",\"col\":3}}]",
+ "creation": "2023-12-11 00:06:47.673801",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "hide_custom": 0,
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Employee Details",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0633\u0646\u062f \u0635\u0631\u0641 \u0633\u0644\u0641\u0629",
+   "link_count": 0,
+   "link_to": "Loan Disbursement",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0645\u0648\u0638\u0641",
+   "link_count": 4,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u0645\u0648\u0638\u0641",
+   "link_count": 0,
+   "link_to": "Employee",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u0645\u0633\u0645\u0649 \u0627\u0644\u0648\u0638\u064a\u0641\u064a",
+   "link_count": 0,
+   "link_to": "Designation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u0641\u0631\u0648\u0639",
+   "link_count": 0,
+   "link_to": "Branch",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u0642\u0633\u0645",
+   "link_count": 0,
+   "link_to": "Department",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u064a\u0629 \u0627\u0644\u062a\u062d\u0636\u064a\u0631",
+   "link_count": 4,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0628\u0635\u0645\u0627\u062a \u0627\u0644\u0645\u0648\u0638\u0641",
+   "link_count": 0,
+   "link_to": "Employee Checkin",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0646\u0648\u0627\u0639 \u0627\u0644\u0645\u0646\u0627\u0648\u0628\u0627\u062a",
+   "link_count": 0,
+   "link_to": "Shift Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0637\u0644\u0628 \u062d\u0636\u0648\u0631",
+   "link_count": 0,
+   "link_to": "Leave Application",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u062a\u0633\u062c\u064a\u0644 \u0627\u0644\u062d\u0636\u0648\u0631 - \u0641\u0631\u062f\u064a - \u064a\u0648\u0645\u064a",
+   "link_count": 0,
+   "link_to": "Attendance",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u0627\u062c\u0627\u0632\u0627\u062a",
+   "link_count": 4,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0646\u0648\u0627\u0639 \u0627\u0644\u0627\u062c\u0627\u0632\u0627\u062a",
+   "link_count": 0,
+   "link_to": "Leave Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0645\u0646\u062d \u0631\u0635\u064a\u062f \u0627\u0644\u0627\u062c\u0627\u0632\u0627\u062a",
+   "link_count": 0,
+   "link_to": "Quick Stock Balance",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0637\u0644\u0628 \u0627\u062c\u0627\u0632\u0629",
+   "link_count": 0,
+   "link_to": "Leave Application",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u062a\u0642\u0631\u064a\u0631 \u0631\u0635\u064a\u062f \u0627\u0644\u0627\u062c\u0627\u0632\u0627\u062a \u0627\u0644\u0645\u062a\u0628\u0642\u064a\u0629",
+   "link_count": 0,
+   "link_to": "\u062a\u0642\u0631\u064a\u0631 \u0631\u0635\u064a\u062f \u0627\u0644\u0627\u062c\u0627\u0632\u0627\u062a \u0627\u0644\u0645\u062a\u0628\u0642\u064a\u0629",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0627\u0644\u0645\u0631\u062a\u0628\u0627\u062a \u0648 \u0627\u0644\u0627\u062c\u0648\u0631",
+   "link_count": 4,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0647\u064a\u0643\u0644 \u0627\u0644\u0631\u0627\u062a\u0628",
+   "link_count": 0,
+   "link_to": "Salary Structure",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0631\u0628\u0637 \u0627\u0644\u0645\u0648\u0638\u0641\u064a\u0646 \u0628\u0647\u064a\u0643\u0644 \u0627\u0644\u0631\u0627\u062a\u0628",
+   "link_count": 0,
+   "link_to": "Salary Structure Assignment",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0633\u0646\u062f \u0627\u062d\u062a\u0633\u0627\u0628 \u0648\u0627\u0633\u062a\u0644\u0627\u0645 \u0627\u0644\u0631\u0627\u062a\u0628",
+   "link_count": 0,
+   "link_to": "Salary Slip",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u062a\u0642\u0631\u064a\u0631 \u0627\u0644\u0645\u0631\u062a\u0628\u0627\u062a \u0648 \u0627\u0644\u0627\u062c\u0648\u0631",
+   "link_count": 0,
+   "link_to": "\u062a\u0642\u0631\u064a\u0631 \u0627\u0644\u0645\u0631\u062a\u0628\u0627\u062a \u0648 \u0627\u0644\u0627\u062c\u0648\u0631",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-05-15 01:03:32.786073",
+ "modified_by": "o.mutawakel@fintechsys.net",
+ "module": "Pav Hr",
+ "name": "Employee Details",
+ "number_cards": [],
+ "owner": "o.mutawakel@fintechsys.net",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "doc_view": "",
+   "label": "Employee Scorecard",
+   "link_to": "Employee Scorecard",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Employee Scorecard Template",
+   "link_to": "Employee Scorecard Template",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Cumulative Employee Scorecard Report",
+   "link_to": "Cumulative Employee Scorecard Report",
+   "type": "Report"
+  },
+  {
+   "doc_view": "",
+   "label": "Training Program",
+   "link_to": "Training Program",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Training Result",
+   "link_to": "Training Result",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Training Feedback",
+   "link_to": "Training Feedback",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Date wise Employee Checkin OT",
+   "link_to": "Date wise Employee Checkin OT",
+   "type": "Report"
+  },
+  {
+   "doc_view": "",
+   "label": "Employee Checkin Summery Report",
+   "link_to": "Employee Checkin Summery Report",
+   "type": "Report"
+  },
+  {
+   "doc_view": "",
+   "label": "Cumulative Attendance Report",
+   "link_to": "Cumulative Attendance Report",
+   "type": "Report"
+  }
+ ],
+ "title": "Employee Details"
+}

@@ -1,0 +1,140 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-05-11 12:07:30.196978",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "note",
+  "notes",
+  "section_break_vcpsq",
+  "subject",
+  "complaints_type",
+  "complaint_against_the_person",
+  "column_break_afe97",
+  "date",
+  "section_break_3ewi8",
+  "description",
+  "amended_from",
+  "naming_series"
+ ],
+ "fields": [
+  {
+   "default": "\u064a\u0645\u0643\u0646\u0643 \u0627\u0644\u062f\u062e\u0648\u0644 \u0645\u0646 \u0627\u0644\u0645\u062a\u0635\u0641\u062d \u0627\u0644\u062e\u0641\u064a \u0648\u062a\u0642\u062f\u064a\u0645 \u0627\u0644\u0634\u0643\u0648\u0649 \u0628\u0633\u0631\u064a\u0629 \u0648\u0644\u0646 \u064a\u062a\u0645 \u0627\u0644\u0627\u0637\u0644\u0627\u0639 \u0639\u0644\u0649 \u0645\u0642\u062f\u0645 \u0627\u0644\u0634\u0643\u0648\u0649",
+   "fieldname": "note",
+   "fieldtype": "Data",
+   "label": "note",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_vcpsq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "complaints_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "complaints Type",
+   "options": "\u0634\u0643\u0648\u0649\n\u0645\u0642\u062a\u0631\u062d",
+   "reqd": 1
+  },
+  {
+   "fieldname": "complaint_against_the_person",
+   "fieldtype": "Data",
+   "label": "Complaint against the person"
+  },
+  {
+   "fieldname": "column_break_afe97",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_3ewi8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Employee complaints",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Subject",
+   "reqd": 1
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "HTML",
+   "label": "note",
+   "options": "<h2><strong>\u064a\u0645\u0643\u0646\u0643 \u0627\u0644\u062f\u062e\u0648\u0644 \u0645\u0646 \u0627\u0644\u0645\u062a\u0635\u0641\u062d \u0627\u0644\u062e\u0641\u064a \u0648\u062a\u0642\u062f\u064a\u0645 \u0627\u0644\u0634\u0643\u0648\u0649 \u0628\u0633\u0631\u064a\u0629 \u0648\u0644\u0646 \u064a\u062a\u0645 \u0627\u0644\u0627\u0637\u0644\u0627\u0639 \u0639\u0644\u0649 \u0645\u0642\u062f\u0645 \u0627\u0644\u0634\u0643\u0648\u0649</strong></h2>"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "naming_series",
+   "options": "EC-.YYYY.-"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-05-11 15:30:07.231265",
+ "modified_by": "Administrator",
+ "module": "Pav Hr",
+ "name": "Employee complaints",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

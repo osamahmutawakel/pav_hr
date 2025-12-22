@@ -1,0 +1,486 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format: {employee} - {month} - {year} ",
+ "creation": "2023-11-27 21:27:29.463084",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_details_section",
+  "employee",
+  "employee_name",
+  "employee_number",
+  "employee_user_id",
+  "employment_type",
+  "column_break_5",
+  "department",
+  "branch",
+  "employee_grade",
+  "designation",
+  "section_break_12",
+  "editor",
+  "editor_name",
+  "editor_user_id",
+  "column_break_15",
+  "section_break_9",
+  "month",
+  "year",
+  "column_break_12",
+  "from_date",
+  "to_date",
+  "evaluation_date",
+  "section_break_22",
+  "employee_scorecard_template",
+  "section_break_24",
+  "job_performance",
+  "section_break_25",
+  "total_job_performance",
+  "column_break_28",
+  "total_of_max_scores_job_performance",
+  "section_break_31",
+  "execution_of_instructions",
+  "section_break_33",
+  "total_execution_of_instructions",
+  "column_break_35",
+  "total_of_max_scores_execution_of_instructions",
+  "section_break_36",
+  "personal_qualities",
+  "section_break_38",
+  "total_personal_qualities",
+  "column_break_40",
+  "total_of_max_scores_personal_qualities",
+  "section_break_42",
+  "total_resualt",
+  "column_break_44",
+  "grade",
+  "section_break_50",
+  "guidance_and_recommendations",
+  "section_break_17",
+  "last_resualt",
+  "last_grade",
+  "column_break_19",
+  "posting_date",
+  "section_break_52",
+  "satisfied",
+  "column_break_54",
+  "reason",
+  "performance_incentive_submtted",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_details_section",
+   "fieldtype": "Section Break",
+   "label": "Employee Details"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.employee_number",
+   "fieldname": "employee_number",
+   "fieldtype": "Data",
+   "label": "Employee Number",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.user_id",
+   "fieldname": "employee_user_id",
+   "fieldtype": "Link",
+   "label": "Employee User ID",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.employment_type",
+   "fieldname": "employment_type",
+   "fieldtype": "Link",
+   "label": "Employment Type",
+   "options": "Employment Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.branch",
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "branch",
+   "options": "Branch",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.grade",
+   "fieldname": "employee_grade",
+   "fieldtype": "Link",
+   "label": "Employee Grade",
+   "options": "Employee Grade",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.designation",
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "editor",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Editor ",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "editor_user_id.full_name",
+   "fieldname": "editor_name",
+   "fieldtype": "Data",
+   "label": "Editor Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.scorecard_approver",
+   "fieldname": "editor_user_id",
+   "fieldtype": "Link",
+   "label": "Editor User ID",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break",
+   "label": "Evaluation Details"
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Select",
+   "label": "Month",
+   "options": "\nJan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug\nSep\nOct\nNov\nDec",
+   "reqd": 1
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Link",
+   "label": "Year",
+   "options": "Fiscal Year",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date",
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "evaluation_date",
+   "fieldtype": "Date",
+   "label": "Evaluation Date"
+  },
+  {
+   "fieldname": "section_break_22",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "employee_scorecard_template",
+   "fieldtype": "Link",
+   "label": "Employee Scorecard Template",
+   "options": "Employee Scorecard Template"
+  },
+  {
+   "fieldname": "section_break_24",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.employee_scorecard_template",
+   "fieldname": "job_performance",
+   "fieldtype": "Table",
+   "label": "Job Performance",
+   "options": "Employee Scorecard Details"
+  },
+  {
+   "fieldname": "section_break_25",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.total_job_performance != 0",
+   "fieldname": "total_job_performance",
+   "fieldtype": "Float",
+   "label": "Total (Job Performance)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_28",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.employee_scorecard_template",
+   "fieldname": "total_of_max_scores_job_performance",
+   "fieldtype": "Float",
+   "label": "Total of Max Scores (Job Performance)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_31",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.employee_scorecard_template",
+   "fieldname": "execution_of_instructions",
+   "fieldtype": "Table",
+   "label": "Execution of instructions",
+   "options": "Employee Scorecard Details"
+  },
+  {
+   "fieldname": "section_break_33",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.total_execution_of_instructions != 0",
+   "fieldname": "total_execution_of_instructions",
+   "fieldtype": "Float",
+   "label": "Total (Execution of instructions)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_35",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.employee_scorecard_template",
+   "fieldname": "total_of_max_scores_execution_of_instructions",
+   "fieldtype": "Float",
+   "label": "Total of Max Scores (Execution of instructions)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_36",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.employee_scorecard_template",
+   "fieldname": "personal_qualities",
+   "fieldtype": "Table",
+   "label": "Personal qualities",
+   "options": "Employee Scorecard Details"
+  },
+  {
+   "fieldname": "section_break_38",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.total_personal_qualities != 0",
+   "fieldname": "total_personal_qualities",
+   "fieldtype": "Float",
+   "label": "Total (Personal qualities)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_40",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.employee_scorecard_template",
+   "fieldname": "total_of_max_scores_personal_qualities",
+   "fieldtype": "Float",
+   "label": "Total of Max Scores (Personal qualities)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_42",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.total_resualt != 0",
+   "fieldname": "total_resualt",
+   "fieldtype": "Percent",
+   "label": "Total Resualt",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_44",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Select",
+   "label": "Grade",
+   "options": "\nExcellent\nVery Good\nGood\nAverage\nWeak",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_50",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "guidance_and_recommendations",
+   "fieldtype": "Text Editor",
+   "label": "Guidance and Recommendations"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break",
+   "label": "Last Evaluation Details"
+  },
+  {
+   "depends_on": "eval:doc.reference",
+   "fetch_from": "reference.total_resualt",
+   "fieldname": "last_resualt",
+   "fieldtype": "Percent",
+   "label": "Resualt",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "reference.grade",
+   "fieldname": "last_grade",
+   "fieldtype": "Select",
+   "label": "Grade",
+   "options": "\nExcellent\nVery Good\nGood\nAverage\nWeak",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "reference.evaluation_date",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_52",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "satisfied",
+   "fieldtype": "Check",
+   "label": "Employee is Satisfied with the result of the evaluation"
+  },
+  {
+   "fieldname": "column_break_54",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.satisfied == 0",
+   "fieldname": "reason",
+   "fieldtype": "Small Text",
+   "ignore_user_permissions": 1,
+   "label": "Reason",
+   "mandatory_depends_on": "eval:doc.satisfied == 0"
+  },
+  {
+   "default": "0",
+   "fieldname": "performance_incentive_submtted",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Performance Incentive Submtted"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Employee Scorecard",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-11-27 21:27:29.463084",
+ "modified_by": "Administrator",
+ "module": "Pav Hr",
+ "name": "Employee Scorecard",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "employee_name"
+}

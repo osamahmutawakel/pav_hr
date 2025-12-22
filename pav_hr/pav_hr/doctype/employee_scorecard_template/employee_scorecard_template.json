@@ -1,0 +1,143 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:template_name",
+ "creation": "2023-11-27 21:24:13.112261",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "template_name",
+  "section_break_24",
+  "job_performance",
+  "section_break_25",
+  "total_of_max_scores_job_performance",
+  "section_break_31",
+  "execution_of_instructions",
+  "section_break_33",
+  "total_of_max_scores_execution_of_instructions",
+  "section_break_36",
+  "personal_qualities",
+  "section_break_38",
+  "total_of_max_scores_personal_qualities"
+ ],
+ "fields": [
+  {
+   "fieldname": "template_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Template Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "section_break_24",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "job_performance",
+   "fieldtype": "Table",
+   "label": "Job Performance",
+   "options": "Employee Scorecard Temp Details"
+  },
+  {
+   "fieldname": "section_break_25",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_of_max_scores_job_performance",
+   "fieldtype": "Percent",
+   "label": "Total of Max Scores (Job Performance)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_31",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "execution_of_instructions",
+   "fieldtype": "Table",
+   "label": "Execution Of Instructions",
+   "options": "Employee Scorecard Temp Details"
+  },
+  {
+   "fieldname": "section_break_33",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_of_max_scores_execution_of_instructions",
+   "fieldtype": "Percent",
+   "label": "Total of Max Scores (Execution of instructions)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_36",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "personal_qualities",
+   "fieldtype": "Table",
+   "label": "Personal Qualities",
+   "options": "Employee Scorecard Temp Details"
+  },
+  {
+   "fieldname": "section_break_38",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_of_max_scores_personal_qualities",
+   "fieldtype": "Percent",
+   "label": "Total of Max Scores (Personal qualities)",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-27 21:24:13.112261",
+ "modified_by": "Administrator",
+ "module": "Pav Hr",
+ "name": "Employee Scorecard Template",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1
+}

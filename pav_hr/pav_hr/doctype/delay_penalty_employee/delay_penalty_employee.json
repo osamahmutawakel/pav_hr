@@ -1,0 +1,190 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-12-19 18:27:11.916955",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "late_hours",
+  "default_delay_time",
+  "overtime_hours",
+  "absent_days",
+  "leave_balance",
+  "last_gross_pay",
+  "last_gross_pay_day",
+  "last_gross_pay_mint",
+  "column_break_7",
+  "employee_name",
+  "days_count",
+  "hours",
+  "hour_amount",
+  "delay_time_amount",
+  "overtime_amount",
+  "absent_days_amount",
+  "discount_days",
+  "amount",
+  "reason"
+ ],
+ "fields": [
+  {
+   "columns": 3,
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "columns": 1,
+   "fieldname": "late_hours",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Late Time"
+  },
+  {
+   "fieldname": "default_delay_time",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Default Delay Time"
+  },
+  {
+   "fieldname": "overtime_hours",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Overtime hours"
+  },
+  {
+   "columns": 1,
+   "fieldname": "absent_days",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Absent Days"
+  },
+  {
+   "columns": 1,
+   "fieldname": "leave_balance",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Leave Balance"
+  },
+  {
+   "bold": 1,
+   "fieldname": "last_gross_pay",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Last Gross Pay",
+   "read_only": 1
+  },
+  {
+   "fieldname": "last_gross_pay_day",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Last Gross Pay |Day"
+  },
+  {
+   "fieldname": "last_gross_pay_mint",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Last Gross Pay |Mint"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 3,
+   "fetch_from": "employee.employee_name",
+   "fetch_if_empty": 1,
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Employee Name"
+  },
+  {
+   "columns": 1,
+   "fieldname": "hours",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Hours - Mints"
+  },
+  {
+   "fieldname": "hour_amount",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Late Amount"
+  },
+  {
+   "fieldname": "delay_time_amount",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Delay Time Amount"
+  },
+  {
+   "fieldname": "overtime_amount",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Overtime amount"
+  },
+  {
+   "default": "0",
+   "fieldname": "absent_days_amount",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Absent Days Amount"
+  },
+  {
+   "columns": 1,
+   "fieldname": "discount_days",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Discount days"
+  },
+  {
+   "columns": 1,
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Penalty Amount"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Small Text",
+   "label": "Reason"
+  },
+  {
+   "columns": 3,
+   "fieldname": "days_count",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "days_count",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-04-21 22:09:53.516828",
+ "modified_by": "Administrator",
+ "module": "Pav Hr",
+ "name": "Delay Penalty Employee",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,116 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-23 20:43:43.275289",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "late_hours",
+  "absent_days",
+  "leave_allocated",
+  "leave_balance",
+  "salary",
+  "column_break_7",
+  "salary_component",
+  "discount_days",
+  "hours",
+  "amount",
+  "days_count",
+  "reason"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "late_hours",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Late Hours"
+  },
+  {
+   "fieldname": "absent_days",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Absent Days"
+  },
+  {
+   "fieldname": "leave_allocated",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Leave Allocated"
+  },
+  {
+   "fetch_from": "employee.salary_amount",
+   "fieldname": "leave_balance",
+   "fieldtype": "Float",
+   "label": "Leave Balance"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "salary_component",
+   "fieldtype": "Link",
+   "label": "Salary Component",
+   "options": "Salary Component"
+  },
+  {
+   "fieldname": "discount_days",
+   "fieldtype": "Float",
+   "label": "Discount days"
+  },
+  {
+   "fieldname": "hours",
+   "fieldtype": "Float",
+   "label": "Hours"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount"
+  },
+  {
+   "fieldname": "days_count",
+   "fieldtype": "Float",
+   "label": "Days Count"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Small Text",
+   "label": "Reason"
+  },
+  {
+   "fieldname": "salary",
+   "fieldtype": "Float",
+   "label": "Salary"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-04-23 21:16:26.704634",
+ "modified_by": "Administrator",
+ "module": "Pav Hr",
+ "name": "Delay Penalty Employee Detils",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

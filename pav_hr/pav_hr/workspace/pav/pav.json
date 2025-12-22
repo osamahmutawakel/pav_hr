@@ -1,0 +1,142 @@
+{
+ "category": "Modules",
+ "charts": [],
+ "creation": "2022-09-17 16:21:44.510066",
+ "developer_mode_only": 0,
+ "disable_user_customization": 1,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends_another_page": 0,
+ "hide_custom": 1,
+ "icon": "PAV HR",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "pav",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee",
+   "link_type": "DocType",
+   "onboard": 0,
+   "only_for": "",
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Delay Penalty",
+   "link_to": "Delay Penalty",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Delay Penalty Employee",
+   "link_to": "Delay Penalty Employee",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Absence Penalty",
+   "link_to": "Absence Penalty",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Absence Penalty Employee",
+   "link_to": "Absence Penalty Employee",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Penalty Calculation",
+   "link_to": "Penalty Calculation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Checkin Tool",
+   "link_to": "Employee Checkin Tool",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Checkin Tool Employee",
+   "link_to": "Employee Checkin Tool Employee",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2022-09-17 16:27:19.012500",
+ "modified_by": "support-team@partner-cons.com",
+ "module": "PAV HR",
+ "name": "pav",
+ "onboarding": "Human Resource",
+ "owner": "support-team@partner-cons.com",
+ "pin_to_bottom": 0,
+ "pin_to_top": 1,
+ "shortcuts": [
+  {
+   "doc_view": "List",
+   "label": "Delay Penalty",
+   "link_to": "Delay Penalty",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Delay Penalty Employee",
+   "link_to": "Delay Penalty Employee",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Absence Penalty",
+   "link_to": "Absence Penalty",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Absence Penalty Employee",
+   "link_to": "Absence Penalty Employee",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Penalty Calculation",
+   "link_to": "Penalty Calculation",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Employee Checkin Tool",
+   "link_to": "Employee Checkin Tool",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Employee Checkin Tool Employee",
+   "link_to": "Employee Checkin Tool Employee",
+   "type": "DocType"
+  }
+ ]
+}
