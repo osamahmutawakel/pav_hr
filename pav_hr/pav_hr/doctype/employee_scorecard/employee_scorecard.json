@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format: {employee} - {month} - {year} ",
+ "autoname": "format: {employee} - {month} - {year}",
  "creation": "2023-11-27 21:27:29.463084",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -57,6 +57,7 @@
   "section_break_50",
   "guidance_and_recommendations",
   "section_break_17",
+  "reference",
   "last_resualt",
   "last_grade",
   "column_break_19",
@@ -76,9 +77,9 @@
   },
   {
    "fieldname": "employee",
-   "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Employee",
+   "fieldtype": "Link",
    "options": "Employee",
    "reqd": 1
   },
@@ -364,6 +365,12 @@
    "label": "Last Evaluation Details"
   },
   {
+   "fieldname": "reference",
+   "fieldtype": "Link",
+   "label": "Reference Scorecard",
+   "options": "Employee Scorecard"
+  },
+  {
    "depends_on": "eval:doc.reference",
    "fetch_from": "reference.total_resualt",
    "fieldname": "last_resualt",
@@ -476,7 +483,6 @@
    "report": 1,
    "role": "HR Manager",
    "share": 1,
-   "submit": 1,
    "write": 1
   }
  ],
