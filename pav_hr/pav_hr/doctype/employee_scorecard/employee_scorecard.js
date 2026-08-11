@@ -2,21 +2,16 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on('Employee Scorecard', {
-	setup: function(frm) {
-		if (frm.get_field("job_performance")) {
-			frm.get_field("job_performance").grid.cannot_add_rows = true;
-			frm.set_df_property('job_performance', 'cannot_delete_rows', 1);
-		}
-		if (frm.get_field("execution_of_instructions")) {
-			frm.get_field("execution_of_instructions").grid.cannot_add_rows = true;
-			frm.set_df_property('execution_of_instructions', 'cannot_delete_rows', 1);
-		}
-		if (frm.get_field("personal_qualities")) {
-			frm.get_field("personal_qualities").grid.cannot_add_rows = true;
-			frm.set_df_property('personal_qualities', 'cannot_delete_rows', 1);
-		}
 
-		frm.set_query("reference", function() {
+	setup: function(frm){
+		frm.get_field("job_performance").grid.cannot_add_rows = true;
+		frm.set_df_property('job_performance', 'cannot_delete_rows', 1);
+		frm.get_field("execution_of_instructions").grid.cannot_add_rows = true;
+		frm.set_df_property('execution_of_instructions', 'cannot_delete_rows', 1);
+		frm.get_field("personal_qualities").grid.cannot_add_rows = true;
+		frm.set_df_property('personal_qualities', 'cannot_delete_rows', 1);
+
+		frm.set_query("reference", function(){
 			return {
 				filters: {
 					"docstatus": 1
@@ -25,24 +20,18 @@ frappe.ui.form.on('Employee Scorecard', {
 		});
 	},
 
-	employee: function(frm) {
-		if (frm.doc.employee) {
-			frappe.call({
-				method: "frappe.client.get_value",
-				args: {
-					doctype: "Employee",
-					filters: { "name": frm.doc.employee },
-					fieldname: "scorecard_template"
-				},
-				callback: function(x) {
-					if (x && x.message && x.message.scorecard_template) {
-						frm.set_value("employee_scorecard_template", x.message.scorecard_template);
-					} else {
-						frm.set_value("employee_scorecard_template", '');
-					}
+	employee: function(frm){
+		if (!frm.doc.employee) return;
+
+		// جلب قالب التقييم فقط دون إحداث استعلامات لـ grade
+		frappe.db.get_value("Employee", frm.doc.employee, "scorecard_template")
+			.then(r => {
+				if (r && r.message && r.message.scorecard_template) {
+					frm.set_value("employee_scorecard_template", r.message.scorecard_template);
+				} else {
+					frm.set_value("employee_scorecard_template", '');
 				}
 			});
-		}
 	},
 
 	employee_scorecard_template: function(frm) {
@@ -57,10 +46,10 @@ frappe.ui.form.on('Employee Scorecard', {
 });
 
 frappe.ui.form.on('Employee Scorecard Details', {
-	current_score: function(frm, cdt, cdn) {
+	current_score: function(frm, cdt, cdn){
 		var row = locals[cdt][cdn];
-		if (row.current_score > row.max_score) {
-			frappe.msgprint("<b>Current Score</b> for row <b>" + row.idx + "</b> must be less than <b>" + row.max_score + "</b>");
+		if(flt(row.current_score) > flt(row.max_score)){
+			frappe.msgprint(__("<b>Current Score</b> for row <b>{0}</b> must be less than <b>{1}</b>", [row.idx, row.max_score]));
 			frappe.model.set_value(cdt, cdn, "current_score", 0);
 		}
 	}
