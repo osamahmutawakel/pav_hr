@@ -23,7 +23,7 @@ frappe.ui.form.on('Employee Scorecard', {
 	employee: function(frm){
 		if (!frm.doc.employee) return;
 
-		// جلب قالب التقييم فقط دون إحداث استعلامات لـ grade
+		// جلب قالب التقييم المحدد للموظف
 		frappe.db.get_value("Employee", frm.doc.employee, "scorecard_template")
 			.then(r => {
 				if (r && r.message && r.message.scorecard_template) {
@@ -35,13 +35,42 @@ frappe.ui.form.on('Employee Scorecard', {
 	},
 
 	employee_scorecard_template: function(frm) {
-		if (frm.doc.employee_scorecard_template) {
-			erpnext.utils.map_current_doc({
-				method: "pav_hr.pav_hr.doctype.employee_scorecard.employee_scorecard.fetch_employee_scorecard_template",
-				source_name: frm.doc.employee_scorecard_template,
-				frm: frm
-			});
+		if (!frm.doc.employee_scorecard_template) {
+			// تفريغ الجداول في حال تم مسح القالب
+			frm.clear_table("job_performance");
+			frm.clear_table("execution_of_instructions");
+			frm.clear_table("personal_qualities");
+			frm.refresh_fields(["job_performance", "execution_of_instructions", "personal_qualities"]);
+			return;
 		}
+
+		frappe.call({
+			method: "pav_hr.pav_hr.doctype.employee_scorecard.employee_scorecard.fetch_employee_scorecard_template",
+			args: {
+				source_name: frm.doc.employee_scorecard_template
+			},
+			callback: function(r) {
+				if (r.message) {
+					// تفريغ الجداول القديمة وتعبئتها من القالب دون المساس بالموظف
+					frm.clear_table("job_performance");
+					frm.clear_table("execution_of_instructions");
+					frm.clear_table("personal_qualities");
+
+					const tables = ["job_performance", "execution_of_instructions", "personal_qualities"];
+					tables.forEach(table_field => {
+						if (r.message[table_field]) {
+							r.message[table_field].forEach(row => {
+								let child = frm.add_child(table_field);
+								Object.assign(child, row);
+								delete child.name; // لضمان توليد اسم فريد جديد للصف
+							});
+						}
+					});
+
+					frm.refresh_fields(tables);
+				}
+			}
+		});
 	}
 });
 
