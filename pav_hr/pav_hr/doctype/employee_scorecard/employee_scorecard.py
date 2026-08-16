@@ -105,21 +105,12 @@ class EmployeeScorecard(Document):
 
 
 @frappe.whitelist()
-def fetch_employee_scorecard_template(source_name, target_doc=None):
-	target_doc = get_mapped_doc(
-		"Employee Scorecard Template",
-		source_name,
-		{
-			"Employee Scorecard Template": {
-				"doctype": "Employee Scorecard",
-				"field_map": {
-					"job_performance": "job_performance",
-					"execution_of_instructions": "execution_of_instructions",
-					"personal_qualities": "personal_qualities",
-				},
-			}
-		},
-		target_doc,
-	)
+def fetch_employee_scorecard_template(source_name):
+	template = frappe.get_doc("Employee Scorecard Template", source_name)
+	return {
+		"job_performance": [d.as_dict() for d in template.get("job_performance", [])],
+		"execution_of_instructions": [d.as_dict() for d in template.get("execution_of_instructions", [])],
+		"personal_qualities": [d.as_dict() for d in template.get("personal_qualities", [])],
+	}
 
 	return target_doc
