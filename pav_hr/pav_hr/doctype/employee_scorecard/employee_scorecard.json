@@ -53,13 +53,11 @@
   "section_break_42",
   "total_resualt",
   "column_break_44",
-  "grade",
   "section_break_50",
   "guidance_and_recommendations",
   "section_break_17",
   "reference",
   "last_resualt",
-  "last_grade",
   "column_break_19",
   "posting_date",
   "section_break_52",
@@ -342,13 +340,6 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "grade",
-   "fieldtype": "Select",
-   "label": "Grade",
-   "options": "\nExcellent\nVery Good\nGood\nAverage\nWeak",
-   "read_only": 1
-  },
-  {
    "fieldname": "section_break_50",
    "fieldtype": "Section Break"
   },
@@ -377,14 +368,6 @@
    "read_only": 1
   },
   {
-   "fetch_from": "reference.grade",
-   "fieldname": "last_grade",
-   "fieldtype": "Select",
-   "label": "Grade",
-   "options": "\nExcellent\nVery Good\nGood\nAverage\nWeak",
-   "read_only": 1
-  },
-  {
    "fieldname": "column_break_19",
    "fieldtype": "Column Break"
   },
@@ -396,7 +379,8 @@
    "read_only": 1
   },
   {
-   "section_break_52": "Section Break"
+   "fieldname": "section_break_52",
+   "fieldtype": "Section Break"
   },
   {
    "default": "1",
@@ -436,7 +420,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-11-27 21:27:29.463084",
+ "modified": "2026-08-16 11:30:56.398537",
  "modified_by": "Administrator",
  "module": "Pav Hr",
  "name": "Employee Scorecard",
